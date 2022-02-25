@@ -6,6 +6,7 @@
 # https://github.com/sanjaysaini2000/react-todo-app/blob/master/Dockerfile
 
 # Add this line to test auto build in docker hub v2
+# Add this line to test auto deploy to azure
 
 # build environment
 FROM alpine:latest as build
