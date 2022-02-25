@@ -5,6 +5,8 @@
 # https://mherman.org/blog/dockerizing-a-react-app/
 # https://github.com/sanjaysaini2000/react-todo-app/blob/master/Dockerfile
 
+# Add this line to test auto build
+
 # build environment
 FROM alpine:latest as build
 RUN apk update
