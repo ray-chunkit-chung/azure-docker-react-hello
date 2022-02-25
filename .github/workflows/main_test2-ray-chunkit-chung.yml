@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_4f365340ad404d89a0a413ade39e3f59 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_4ee2aeb705eb46bf9e9074756b26e549 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_ecb0b5d196784e73a84890ed52278251 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_649db4c798b64654a196b4be0b5d7f7b }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_4f365340ad404d89a0a413ade39e3f59 }}/raychung/azure-docker-react-hello:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ecb0b5d196784e73a84890ed52278251 }}/raychung/azure-docker-react-starter:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'test2-ray-chunkit-chung'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_60716f88306441a6bcc2a6c8c3f94f25 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_4f365340ad404d89a0a413ade39e3f59 }}/raychung/azure-docker-react-hello:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e1415cecb3f24027a9a9084d405316ff }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ecb0b5d196784e73a84890ed52278251 }}/raychung/azure-docker-react-starter:${{ github.sha }}'
