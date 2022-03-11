@@ -20,7 +20,7 @@ These steps may incur $$$. DYOR. :smiley:
 ![image](https://user-images.githubusercontent.com/26511618/157792178-92f7296e-fda4-432d-a1bf-170206e7f909.png)
 
 
-# New to docker?
+# What is docker tbh?
 
 A minimal tutorial coming soon...
 
