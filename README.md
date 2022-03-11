@@ -14,9 +14,11 @@ For an advanced version, see
 1. git clone this repo
 2. Build dockerfile to your dockerhub account
 3. Create new app service in azure to pull from your dockerhub
-![image](https://user-images.githubusercontent.com/26511618/157792178-92f7296e-fda4-432d-a1bf-170206e7f909.png)
 
 These steps may incur $$$. DYOD. :smiley:
+
+![image](https://user-images.githubusercontent.com/26511618/157792178-92f7296e-fda4-432d-a1bf-170206e7f909.png)
+
 
 # New to docker?
 
