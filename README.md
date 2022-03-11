@@ -1,4 +1,4 @@
-﻿# Azure Docker React Web App
+﻿# Deploy React Web App on Azure App Service
  
 A minimal version of react app to get started deploying on Azure Web service.
 
