@@ -9,5 +9,16 @@ For an advanced version, see
  - [Single container: azure-docker-react-advanced](https://github.com/ray-chunkit-chung/azure-docker-react-advanced)
 
 
+# Getting started
 
-![image](https://user-images.githubusercontent.com/26511618/157791952-465b5c43-97c4-4e9f-b76b-6d46d5b2046f.png)
+1. git clone this repo
+2. Build dockerfile to your dockerhub account
+3. Create new app service in azure to pull from your dockerhub
+![image](https://user-images.githubusercontent.com/26511618/157792178-92f7296e-fda4-432d-a1bf-170206e7f909.png)
+
+These steps may incur $$$. DYOD. :smiley:
+
+# New to docker?
+
+A minimal tutorial coming soon...
+
