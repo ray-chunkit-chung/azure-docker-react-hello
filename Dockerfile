@@ -9,21 +9,27 @@
 # Add this line to test auto deploy to azure
 
 # build environment
+# Get minimal base image
 FROM alpine:latest as build
 RUN apk update
-RUN apk add --update nodejs npm
+RUN apk add --update nodejs npm yarn
 RUN mkdir /app
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
+
 COPY package.json /app
-RUN npm install
+RUN yarn install
 COPY . /app
-RUN npm run build
+RUN yarn build
 
-# production environment
-FROM nginx:stable-alpine
-COPY --from=build /app/build /usr/share/nginx/html
-# EXPOSE 80
-# CMD ["nginx", "-g", "daemon off;"]
+#########################
+# Prod
+#########################
+# FROM nginx:stable-alpine
+# COPY --from=build /app/build /usr/share/nginx/html
 
-
+###################
+# Dev
+###################
+EXPOSE 3000
+CMD [ "yarn", "start" ]

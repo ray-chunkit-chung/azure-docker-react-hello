@@ -13,6 +13,8 @@ For an advanced version, see
 
 1. git clone this repo
 2. Build dockerfile to your dockerhub account
+2.1 In VSCode, right click Dockerfile > build image >> Name your image: ${dockerhub_id}/${image_name}
+2.2 In VSCode, right click the image > Push >> Enter ${dockerhub_id}
 3. Create new app service in azure to pull from your dockerhub
 
 These steps may incur $$$. DYOR. :smiley:
@@ -20,7 +22,18 @@ These steps may incur $$$. DYOR. :smiley:
 ![image](https://user-images.githubusercontent.com/26511618/157792178-92f7296e-fda4-432d-a1bf-170206e7f909.png)
 
 
-# What is docker tbh?
+
+# Dev on local
+Use dev setting for dev
+```
+docker-compose up -d --remove-orphans --build
+```
+
+Used some setting from here
+https://github.com/karanpratapsingh/tutorials/tree/master/react
+
+
+
+# How to run minimal docker tbh?
 
 A minimal tutorial coming soon...
-
