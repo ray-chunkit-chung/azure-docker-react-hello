@@ -25,11 +25,11 @@ RUN yarn build
 #########################
 # Prod
 #########################
-# FROM nginx:stable-alpine
-# COPY --from=build /app/build /usr/share/nginx/html
+FROM nginx:stable-alpine
+COPY --from=build /app/build /usr/share/nginx/html
 
 ###################
 # Dev
 ###################
-EXPOSE 3000
-CMD [ "yarn", "start" ]
+# EXPOSE 3000
+# CMD [ "yarn", "start" ]
