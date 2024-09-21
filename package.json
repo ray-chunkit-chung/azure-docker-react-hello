@@ -10,6 +10,7 @@
     "dev": "docker-compose up -d --remove-orphans --build"
   },
   "dependencies": {
+    "node-js-getting-started": "file:",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
